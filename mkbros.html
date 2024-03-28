@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKBROS Team Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Link to your favicon image -->
+    <link rel="icon" type="image/png" href="logoMK.png">
+    <style>
+        /* Global styles */
+        body {
+            background-image: url('backgroundMK.png'); /* Background image */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333; /* Font color */
+        }
+        a {
+            text-decoration: none;
+            color: #333; /* Font color */
+        }
+        /* Taskbar styles */
+        .taskbar {
+            background-color: #007bff;
+            padding: 10px 30px;
+            border-radius: 15px;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-image: linear-gradient(to right, #0056b3, #007bff);
+        }
+        .taskbar a {
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+            font-weight: bold; /* Make taskbar elements bold */
+        }
+        .taskbar a:hover {
+            background-color: #0dc7ff;
+        }
+        /* Content styles */
+        .content {
+            padding: 20px;
+            color: #333; /* Font color */
+            text-align: left; /* Align text to left */
+        }
+        .content h1, .content h2 {
+            font-size: 30px; /* Set heading font size */
+            text-align: center; /* Align heading to center */
+            margin-top: 30px; /* Add top margin to headings */
+        }
+        .content hr {
+            border: none;
+            border-top: 2px solid #ADD8E6; /* Horizontal line color */
+            margin: 20px 0; /* Margin above and below the horizontal line */
+        }
+        .content p {
+            margin-top: 10px; /* Add top margin to paragraphs */
+            line-height: 1.6; /* Increase line height for better readability */
+            font-size: 18px; /* Set paragraph font size */
+        }
+        .highlight-shaar {
+            background-color: yellow; /* Highlight color for ShaarGamers */
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+        .highlight-night {
+            background-color: lightsalmon; /* Highlight color for NIGHTMARE */
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to MKBROS Team Website</h1>
+        <p>Hey there! Welcome to our site, MKBROS. Here, we showcase some projects we've worked on and share information about our team. Feel free to reach out to us for any inquiries at <a class="highlight" href="mailto:creativeideas752@gmail.com">creativeideas752@gmail.com</a>.</p>
+        <hr> <!-- Horizontal line -->
+        <h2>About Us</h2>
+        <p>We are three students from SAJV Shri Anand Jain Vidyalaya, and we created a team called Moon Knight Team.</p>
+        <hr> <!-- Horizontal line -->
+        <h2 id="members">Members</h2>
+        <p><strong>Shaarvesh - Captain</strong><br>Shaarvesh, our team captain, is a Call of Duty player and a top performer at school. He's also one of our best friends and holds the prestigious rank of Legendary in Call of Duty. Like Hari Suraj, he's transitioning from 7th to 8th grade.</p>
+        <p><strong>Hari Suraj - Vice Captain</strong><br>Hari Suraj, our Vice Captain, is currently in 7th grade and will be promoted to 8th grade soon. He's a Zooba and Free Fire gamer. You're welcome to join him in-game!</p>
+        <p><strong>Misam - Member Manager</strong><br>Misam, here! I'm also in 7th grade and moving up to 8th grade. Among all the games, I prefer COD for its superior graphics. Occasionally, I dabble in CSGO, but I only win when facing bots. My circle of friends includes Shaarvesh, Hari Suraj, Jazwant, and Achyuthareddy. That's all about me!</p>
+        <hr> <!-- Horizontal line -->
+        <h2 id="contact">Contact Us</h2>
+        <p>You can contact us through the email we provided above or through YouTube: <a class="highlight-shaar" href="https://www.youtube.com/@shaargamerz9638">ShAaR gaMErZ</a> Shaarvesh's
+            <a class="highlight-night" href="https://www.youtube.com/channel/UCTk5QWpO4wqQHfne2fZAW5w">NIGHTMARE</a> Misam's
+            <strong>Hari Suraj doesn't have a YouTube channel</strong>.</p>
+    </div>
+    <script>
+        // Smooth scrolling for all links within the page
+        document.querySelectorAll('a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
